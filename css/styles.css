@@ -141,11 +141,12 @@ section a{
     background-color: rgba(226, 82, 84, 0.9);
 }
 
+
 /*section services*/
 
-section{
-    padding: 80px 0;
+.services{
     background-color: #D6D6D6;
+    padding: 80px 0;
 }
 section .secondaire{
     display: flex;
@@ -185,4 +186,50 @@ section .secondaire{
 }
 .special h3{
     color: #fff;
+}
+
+/*section conseils*/
+.conteneur{
+    position: relative;
+}
+
+.conseils{
+    display: flex;
+    flex-direction: column;
+    gap: 40px;
+    justify-content: center;
+    align-items: center;
+    background: url("../images/tuile.png") center / cover repeat;
+    height: 70vh;
+    
+}
+
+.conseils .secondaire{
+    color: #fff;
+}
+.grille{
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 25px;
+}
+.conteneur{
+    display: flex;
+    gap: 20px;
+    padding: 20px;
+    background-color: #fff;
+}
+.gauche{
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
+.gauche :last-child{
+    margin-top: auto;
+    margin-left: auto;
+}
+
+.droit{
+    display: flex;
+    flex-direction: column;
+    gap: 30px;
 }
