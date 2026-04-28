@@ -54,7 +54,7 @@ a{
     color: #fff;
 }
 
-.bouton {
+.bouton{
     font: 700 1.125rem/1 'Jost', sans-serif;
     
     display: flex;
@@ -123,7 +123,7 @@ a{
 
 /*hero*/
 
-section a{
+section span{
     color: #fff;
 }
 
@@ -275,20 +275,14 @@ footer{
 
 /*modal JE NE COMPREND RIEN*/
 
-.zoom{
-    color: #fff;
-    cursor: pointer;
-    background-color: #fff;
-    padding: 30px;
-    border-radius: 10px;
-}
-
 .modal{
+    font: 900 18.75rem/1 'Jost', sans-serif;
+    color: #E25254;
     position: fixed;
     top: 0;
     left: 0;
 
-    width: 100%;
+    width: 100vw;
     height: 100vh;
 
     z-index: 1000;
@@ -302,4 +296,18 @@ footer{
 
 .modal.visible{
     display: flex;
+}
+
+.close{
+    cursor: pointer;
+}
+
+/*module*/
+button{
+    border: 0px;
+    color: #fff;
+    cursor: pointer;
+}
+.ouvrir{
+    background-color:rgb(226, 82, 84);
 }

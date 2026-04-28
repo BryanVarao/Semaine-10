@@ -1,26 +1,17 @@
-const boutons = document.querySelectorAll(".bouton");
+const buttons = document.querySelectorAll(".ouvrir");
 const modal = document.querySelector(".modal");
+const close = document.querySelector(".close");
 
-for (let i = 0; i < boutons.length; i++) {
-    const bouton = boutons[i];
-    
-    bouton.addEventListener("click", openModal);
+for (let i = 0; i < buttons.length; i++) {
+    buttons[i].addEventListener("click", openModal);
 }
 
-function openModal(){
-    const texte = document.createElement("div");
-    texte.textContent = "fin";
-    texte.classList.add("zoom");
+close.addEventListener("click", closeModal);
 
-    modal.appendChild(texte);
+function openModal() {
     modal.classList.add("visible");
-
-    //Fermeture de la modale
-
-    texte.addEventListener("click", closeModal);
 }
 
-function closeModal(e){
+function closeModal() {
     modal.classList.remove("visible");
-    modal.removeChild(e.currentTarget);
 }
